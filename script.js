@@ -3,10 +3,28 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
   document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
-const sidebarToggleBtn = document.querySelector('.sidebar-toggle');
-const sidebar = document.querySelector('.sidebar');
+const showMoreBtn = document.querySelector('.show-more-btn');
 
-sidebarToggleBtn.addEventListener('click', function() {
-  console.log('Sidebar button clicked');
-  sidebar.classList.toggle('show-sidebar');
+showMoreBtn.addEventListener('click', function() {
+  displayMoreWallpapers();
 });
+
+function displayMoreWallpapers() {
+  const wallpapers = document.querySelectorAll('.wallpaper');
+
+  // Update the number of wallpapers to display
+  const numWallpapersToShow = 6;
+  const numWallpapersDisplayed = document.querySelectorAll('.wallpaper:not(.hidden)').length;
+  const numWallpapersToDisplay = Math.min(numWallpapersDisplayed + numWallpapersToShow, wallpapers.length);
+
+  // Show the next set of wallpapers
+  for (let i = numWallpapersDisplayed; i < numWallpapersToDisplay; i++) {
+    wallpapers[i].classList.remove('hidden');
+  }
+
+  // Hide the "Show More" button if all wallpapers have been displayed
+  if (numWallpapersToDisplay === wallpapers.length) {
+    showMoreBtn.classList.add('hidden');
+    document.querySelector('.show-all-btn').classList.remove('hidden');
+  }
+}
