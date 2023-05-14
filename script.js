@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   // Select the "Show More" button
-  const showMoreButton = document.querySelector('.show-more-button');
+  const showMoreButton = document.getElementById('show-more-button');
+  // Remove this line:
+  // const showMoreButton = document.querySelector('.show-more-button');
+
 
   // Select the last three cards
   const lastThreeCards = document.querySelectorAll('.card:nth-child(n+4)');
