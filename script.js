@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // Select the last three cards
-  const lastThreeCards = document.querySelectorAll('.card:nth-child(n+4)');
+  const lastThreeCards = document.querySelectorAll('.card:nth-child(n+3)');
 
   // Hide the last three cards initially
   lastThreeCards.forEach(card => {
