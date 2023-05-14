@@ -1,112 +1,117 @@
 <!-- HTML code -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>𝔼ternal Papers &#9889;</title>
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .hide {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="flex items-center justify-between bg-gray-900 px-6 py-4 text-white">
-      <div class="flex items-center">
-        <a href="#" class="text-lg font-semibold">𝔼ternal Papers &#9889;</a>
-      </div>
 
-      <!-- Menu button for small screens -->
-      <div class="flex md:hidden">
-        <button id="menu-toggle" class="text-white focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="menu h-6 w-6">
-            <path fill-rule="evenodd" d="M2 6h16v2H2V6zm0 5h16v2H2v-2zm0 5h16v2H2v-2z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </div>
+<head>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝔼ternal Papers &#9889;</title>
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
 
-      <!-- Desktop navigation links -->
-      <div class="hidden md:flex md:items-center">
-        <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">Home</a>
-        <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">Categories</a>
-        <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">Favorites</a>
-        <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">About</a>
-      </div>
-    </nav>
-
-    <!-- Sidebar for small screens -->
-    <div class="fixed right-0 top-0 hidden w-64 bg-gray-900 text-white md:hidden" id="mobile-menu">
-      <div class="px-4 py-2">
-        <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">Home</a>
-        <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">Categories</a>
-        <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">Favorites</a>
-        <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">About</a>
-      </div>
+<body>
+  <nav class="flex items-center justify-between bg-gray-900 px-6 py-4 text-white">
+    <div class="flex items-center">
+      <a href="#" class="text-lg font-semibold">𝔼ternal Papers &#9889;</a>
     </div>
-
-    <div class="container mx-auto my-8">
-      <h2 class="mb-4 text-2xl font-bold">Selected By Developer</h2>
-      <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-        <!-- Category 1 -->
-        <div class=".wallpaper-card overflow-hidden rounded-lg border">
-          <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 1" />
-          <div class="p-4">
-            <h3 class="mb-2 text-lg font-bold">Abstract (Default EOS Wallpaper)</h3>
-            <p class="mb-2">This is the default abstract wallpaper in the Eternal OS ROM. (Others can be chosen during the setup process and after.)</p>
-            <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
-          </div>
-        </div>
-        <div class=".wallpaper-card overflow-hidden rounded-lg border">
-          <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 2" />
-          <div class="p-4">
-            <h3 class="mb-2 text-lg font-bold">Wallpaper 2</h3>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
-          </div>
-        </div>
-        <div class=".wallpaper-card overflow-hidden rounded-lg border">
-          <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 3" />
-          <div class="p-4">
-            <h3 class="mb-2 text-lg font-bold">Wallpaper 3</h3>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
-          </div>
-        </div>
-        <div class="additional-card additional-cards-container hide wallpaper-card overflow-hidden rounded-lg border">
-          <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 1" />
-          <div class="p-4">
-            <h3 class="mb-2 text-lg font-bold">Wallpaper 4</h3>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
-          </div>
-        </div>
-        <div class="additional-card additional-cards-container hide wallpaper-card overflow-hidden rounded-lg border">
-          <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 2" />
-          <div class="p-4">
-            <h3 class="mb-2 text-lg font-bold">Wallpaper 5</h3>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
-          </div>
-        </div>
-        <div class="additional-card additional-cards-container hide wallpaper-card overflow-hidden rounded-lg border">
-          <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 3" />
-          <div class="p-4">
-            <h3 class="mb-2 text-lg font-bold">Wallpaper 6</h3>
-            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <button id="show-more-button" class=".show-more-button mt-8 rounded bg-blue-500 px-4 py-2 text-center font-bold text-white hover:bg-blue-700">Show More</button>
-      </div>
-      <div class="flex justify-center">
-        <button class=".btn-show-all mt-8 rounded bg-blue-500 px-4 py-2 text-center font-bold text-white hover:bg-blue-700">Show All</button>
-      </div>
+    <!-- Menu button for small screens -->
+    <div class="flex md:hidden">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="menu h-6 w-6">
+          <path fill-rule="evenodd" d="M2 6h16v2H2V6zm0 5h16v2H2v-2zm0 5h16v2H2v-2z" clip-rule="evenodd" />
+        </svg>
+      </button>
     </div>
-  </body>
+    <!-- Desktop navigation links -->
+    <div class="hidden md:flex md:items-center">
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">Home</a>
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">Categories</a>
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">Favorites</a>
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-gray-400">About</a>
+    </div>
+  </nav>
+  <!-- Sidebar for small screens -->
+  <div class="fixed right-0 top-0 hidden w-64 bg-gray-900 text-white md:hidden" id="mobile-menu">
+    <div class="px-4 py-2">
+      <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">Home</a>
+      <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">Categories</a>
+      <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">Favorites</a>
+      <a href="#" class="block rounded px-3 py-2 text-white hover:text-gray-400">About</a>
+    </div>
+  </div>
+  <div class="container mx-auto my-8">
+    <h2 class="mb-4 text-2xl font-bold">Selected By Developer</h2>
+    <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <!-- Category 1 -->
+      <div class=".wallpaper-card overflow-hidden rounded-lg border">
+        <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 1" />
+        <div class="p-4">
+          <h3 class="mb-2 text-lg font-bold">Abstract (Default EOS Wallpaper)</h3>
+          <p class="mb-2">This is the default abstract wallpaper in the Eternal OS ROM. (Others can be chosen during the setup process and after.)</p>
+          <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
+        </div>
+      </div>
+      <div class=".wallpaper-card overflow-hidden rounded-lg border">
+        <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 2" />
+        <div class="p-4">
+          <h3 class="mb-2 text-lg font-bold">Wallpaper 2</h3>
+          <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
+        </div>
+      </div>
+      <div class=".wallpaper-card overflow-hidden rounded-lg border">
+        <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 3" />
+        <div class="p-4">
+          <h3 class="mb-2 text-lg font-bold">Wallpaper 3</h3>
+          <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
+        </div>
+      </div>
+      <button id="show-more-button" onclick="toggleAdditionalCards()">Show More</button>
+      <div class="additional-cards-container">
+        <!-- Card Content Starts Here -->
+        <div class="additional-card card">
+          <div class=".wallpaper-card overflow-hidden rounded-lg border">
+            <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 3" />
+            <div class="p-4">
+              <h3 class="mb-2 text-lg font-bold">Wallpaper 3</h3>
+              <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+              <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
+            </div>
+            <!-- Card Content Ends Here -->
+          </div>
+        </div>
+        <div class="additional-card card">
+          <!-- Card content here -->
+          <div class="additional-card card">
+            <div class=".wallpaper-card overflow-hidden rounded-lg border">
+              <img class="w-full" src="https://fastly.picsum.photos/id/1043/200/300.jpg?hmac=3l-zIM3sjEYfLwln1cOurui-983Bxq1zjEYt9HeScyQ" alt="Category 1 Wallpaper 3" />
+              <div class="p-4">
+                <h3 class="mb-2 text-lg font-bold">Wallpaper 3</h3>
+                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Download</button>
+              </div>
+              <!-- Card content ends here -->
+            </div>
+            <div class="additional-card card">
+              <!-- Card content here -->
+              <div class="additional-card card">
+                <div class=".wallpaper-card overflow-hidden rounded-lg border">
+                  <div class="p-4">
+                    <h3 class="mb-2 text-lg font-bold">See All Wallpapers Selected By Developers</h3>
+                    <p class="mb-2">All The Wallpapers On This Site are Free. This Site Does NOT Serve any ads... You may download the Wallpapers for free.</p>
+                    <button class="rounded-lg bg-gray-800 px-4 py-2 text-white hover:bg-gray-700">Show All</button>
+                  </div>
+                  <!-- Card content ends here -->
+                </div>
+              </div>
+</body>
+
 </html>
